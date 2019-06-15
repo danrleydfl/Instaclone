@@ -39,12 +39,12 @@ class New extends Component {
     render() {
         return (
             <form id="new-post" onSubmit={this.handleSubmit}>
-                <input type="file" onChange={this.handleImageChange} />
-                <input type="text" onChange={this.handleChange} value={this.state.author} name="author" placeholder="Autor do post" />
-                <input type="text" onChange={this.handleChange} value={this.state.place} name="place" placeholder="Local do post" />
-                <input type="text" onChange={this.handleChange} value={this.state.description} name="description" placeholder="Descrição do post" />
-                <input type="text" onChange={this.handleChange} value={this.state.hashtags} name="hashtags" placeholder="Hashtags do post" />
-                <button type="submit">Enviar</button>
+            <input type="file" onChange={this.handleImageChange} />
+            <input type="text" onChange={this.handleChange} value={this.state.author} name="author" placeholder="Autor do post" />
+            <input type="text" onChange={this.handleChange} value={this.state.place} name="place" placeholder="Local do post" />
+            <input type="text" onChange={this.handleChange} value={this.state.description} name="description" placeholder="Descrição do post" />
+            <input type="text" onChange={this.handleChange} value={this.state.hashtags} name="hashtags" placeholder="Hashtags do post" />
+            <button type="submit">Enviar</button>
             </form>
         )
     }
