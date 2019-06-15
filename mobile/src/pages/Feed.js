@@ -28,7 +28,7 @@ export default class Feed extends Component {
         this.registerToSocket()
         const response = await api.get('posts')
         console.log(response.data)
-        
+
         this.setState({ feed: response.data })
     }
 
@@ -42,7 +42,7 @@ export default class Feed extends Component {
         socket.on('like', likedPost => {
             this.setState({
                 feed: this.state.feed.map(post =>
-                    post._id === likedPost._id ? likedPost : post    
+                    post._id === likedPost._id ? likedPost : post
                 )
             })
         })

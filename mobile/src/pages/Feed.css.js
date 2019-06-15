@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     feedItem: {
         marginTop: 20
     },
-
+    
     feedItemHeader: {
         paddingHorizontal: 15,
 
@@ -41,11 +41,11 @@ const styles = StyleSheet.create({
     actions: {
         flexDirection: 'row'
     },
-    
+
     action: {
         marginRight: 8
     },
-    
+
     likes: {
         marginTop: 15,
         fontWeight: 'bold',

@@ -1,4 +1,4 @@
-import React from 'react' 
+import React from 'react'
 import { createAppContainer, createStackNavigator } from 'react-navigation'
 import { Image } from 'react-native'
 

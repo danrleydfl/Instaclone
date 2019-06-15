@@ -28,7 +28,7 @@ export default class New extends Component {
                 console.log('Used canceled')
             } else {
                 const preview = {
-                    uri: `data:image/jpeg;base64,${upload.data}`
+                    uri: `data:image/jpegbase64,${upload.data}`
                 }
                 const { uri, type } = upload
                 let name = upload.fileName ? `${upload.fileName.split('.')[0]}.jpg` : `${new Date().getTime()}.jpg`
@@ -56,7 +56,7 @@ export default class New extends Component {
             console.warn("erro na requisição")
         }
     }
-    
+
     render() {
         return (
             <View style={styles.container}>
